@@ -1,0 +1,12 @@
+作业1：开启10个线程下载千图网的前十页图片。
+
+作业2：
+
+1、http://ip:端口/工程名/add?id=1001&name=张三&age=20  用于添加学生信息 
+添加的学生信息转为json存储到某一固定文件中(同一个文件)
+
+2、http://ip:端口/工程名/getStudentById?id=1001  用于获得指定id的学生的json数据
+
+3、http://ip:端口/工程名/getAll  用于获得所有学生的json数据
+
+4、http://ip:端口/工程名/deleteStudentById?id=1001  用于删除指定文件中的id对应学生的信息  （选作）

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+        <class name="com.cloudream.entity.Customer" table="customer">
+            <!-- 主键设置 -->
+            <id name="id" type="string">
+                <column name="id"></column>
+                <generator class="uuid"></generator>
+            </id>
+            <!-- 属性设置 -->
+            <property name="username" column="username" type="string"></property>
+            <property name="balance" column="balance" type="integer"></property>
+            
+            <set name="orders" inverse="true" cascade="all">
+                <key column="customer_id" ></key>
+                <one-to-many class="com.cloudream.entity.Order"/>
+            </set>
+        </class>
+    </hibernate-mapping>

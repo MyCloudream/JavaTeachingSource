@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.cloudream.entity.Student" table="student">
+		<id name="id" column="stu_id">
+			<generator class="native"></generator>
+		</id>
+	<property name="name" column="stu_name"></property>
+	<property name="age" column="stu_age"></property>
+	</class>
+</hibernate-mapping>

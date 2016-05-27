@@ -1,0 +1,4 @@
+1、ThreadCallback工程中的传参问题。
+2、新建Servlet ，访问http://ip:端口/工程名/getCars?page=1
+时，需要将http://www.guazi.com/www/buy/页面中的第一页的车辆的发动机参数获取，并以json数组的形式展示在页面上。
+http://ip:端口/工程名/getCars?page=2时，第二页的车辆发动机参数，page=3时第三页的车辆发动机参数，以此类推。

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <!-- 作为web程序运行的入口 -->
+  <display-name>HelloServlet</display-name>
+  <!-- 欢迎文件列表 -->
+  <welcome-file-list>
+    <welcome-file>main.html</welcome-file>
+  </welcome-file-list>
+  
+	<servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>cn.ucai.day20.HelloServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/getStudent</url-pattern>
+    </servlet-mapping>
+    
+	<servlet>
+        <servlet-name>AddStudent</servlet-name>
+        <servlet-class>cn.ucai.day20.AddStudentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddStudent</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+	
+</web-app>
